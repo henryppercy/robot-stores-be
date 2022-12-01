@@ -18,7 +18,6 @@ class ProductsService {
     constructor() {
         this.getProducts = () => __awaiter(this, void 0, void 0, function* () {
             return yield productCollection.find({}).toArray()
-                .then((products) => (products))
                 .then((products) => {
                 return {
                     message: "Products successfully received.",
@@ -29,7 +28,6 @@ class ProductsService {
         });
         this.getProduct = (id) => __awaiter(this, void 0, void 0, function* () {
             return yield productCollection.find({ "id": id }).toArray()
-                .then((product) => (product))
                 .then((product) => {
                 return {
                     message: "Product successfully received.",
