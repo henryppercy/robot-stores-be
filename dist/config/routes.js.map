@@ -1,0 +1,1 @@
+{"version":3,"file":"routes.js","sourceRoot":"","sources":["../../src/config/routes.ts"],"names":[],"mappings":";;;AAAA,0EAAuE;AAEhE,MAAM,MAAM,GAAG,CAAC,GAAG,EAAE,EAAE;IAC1B,GAAG,CAAC,GAAG,CAAC,WAAW,EAAE,uCAAkB,CAAC,WAAW,CAAC,CAAA;IACpD,GAAG,CAAC,GAAG,CAAC,eAAe,EAAE,uCAAkB,CAAC,UAAU,CAAC,CAAA;AAC3D,CAAC,CAAA;AAHY,QAAA,MAAM,UAGlB"}
