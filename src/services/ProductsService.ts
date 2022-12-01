@@ -7,8 +7,8 @@ dbService.connectToDB()
 class ProductsService {
     getProducts = async () => {
         return await productCollection.find( {} ).toArray()
-            .then((products: any) => (products))
-            .then((products: any) => {
+            .then((products) => (products))
+            .then((products) => {
                 return {
                     message: "Products successfully received.",
                     success: 1,
@@ -19,8 +19,8 @@ class ProductsService {
 
     getProduct = async (id: number) => {
             return await productCollection.find( {"id" : id} ).toArray()
-            .then((product: any) => (product))
-            .then((product: any) => {
+            .then((product) => (product))
+            .then((product) => {
                 return {
                     message: "Product successfully received.",
                     success: 1,
