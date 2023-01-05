@@ -8,7 +8,6 @@ class ProductsController {
     }
 
     getProduct = (req: Express.Request, res: Express.Response) => {
-        console.log('Products controller: getProduct');
         const id: number = parseInt(req.params.id);
         productsService.getProduct(id)
             .then((product) => res.json(product));
