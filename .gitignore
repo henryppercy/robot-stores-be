@@ -30,3 +30,6 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 .DS_Store
 .Idea
+
+# JS build
+.dist
