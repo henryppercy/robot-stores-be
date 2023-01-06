@@ -19,7 +19,7 @@ This project is built using the following technologies:
 
 ### 3.1 Frontend
 
-This project is being built in conjunction with a React frontend. If you wish to use this backend navigate to [this repo](https://github.com/henryppercy/robot-stores-fe) and follow the set up instructions. 
+This project is being built in conjunction with a React frontend. If you wish to use this frontend navigate to [this repo](https://github.com/henryppercy/robot-stores-fe) and follow the set up instructions. 
 
 ### 3.2 Backend
 
@@ -130,7 +130,7 @@ This project is being built in conjunction with a React frontend. If you wish to
 
   ```json
   {
-    "message": "Products successfully received.",
+    "message": "Product successfully received.",
     "success": 1,
     "data":
     [
@@ -160,5 +160,6 @@ This project is being built in conjunction with a React frontend. If you wish to
 
 ## 5. To-do list
 
-- Add POST, PUT, DELETE, and PATCH routes
+- Improve error handling
+- Create POST, PUT, DELETE, and PATCH routes
 - Add GraphQL suppoort
