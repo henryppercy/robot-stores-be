@@ -105,7 +105,7 @@ This project is being built in conjunction with a React frontend. If you wish to
     * **Code:** 500 SERVER ERROR <br />
       **Content:** `{"message": "Unexpected error", "data": []}`
 
-### Return all products
+### Return single product
 
 * **URL**
 
