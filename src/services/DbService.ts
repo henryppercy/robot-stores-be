@@ -1,8 +1,8 @@
 import * as mongoDB from "mongodb";
 
-let url = 'mongodb://root:password@localhost:27017';
+let url = 'mongodb://root:password@localhost:27017/';
 let client: mongoDB.MongoClient = new mongoDB.MongoClient(url);
-let dbName = 'robot_stores';
+const dbName = 'robot_stores';
 
 export const connectToDB = async (): Promise<mongoDB.Db> => {
     await client.connect();
