@@ -1,17 +1,13 @@
 import Express from 'express';
-import { productsService } from '../services/productsService';
+import { getProducts, getProduct } from '../services/productsService';
 
-class ProductsController {
-    getProducts = (req: Express.Request, res: Express.Response) => {
-        productsService.getProducts()
-            .then((productsRes) => res.json(productsRes));
-    }
-
-    getProduct = (req: Express.Request, res: Express.Response) => {
-        const id: number = parseInt(req.params.id);
-        productsService.getProduct(id)
-            .then((productRes) => res.json(productRes));
-    }
+export const getProductsController = (req: Express.Request, res: Express.Response) => {
+    getProducts()
+        .then((productsRes) => res.json(productsRes));
 }
 
-export const productsController = new ProductsController;
+export const getProductController = (req: Express.Request, res: Express.Response) => {
+    const id: number = parseInt(req.params.id);
+    getProduct(id)
+        .then((productRes) => res.json(productRes));
+}

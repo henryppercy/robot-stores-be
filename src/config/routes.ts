@@ -1,6 +1,6 @@
-import { productsController } from '../controllers/productsController';
+import { getProductsController, getProductController } from '../controllers/productsController';
 
 export const routes = (app) => {
-    app.get('/products', productsController.getProducts)
-    app.get('/products/:id', productsController.getProduct)
+    app.get('/products', getProductsController)
+    app.get('/products/:id', getProductController)
 }
